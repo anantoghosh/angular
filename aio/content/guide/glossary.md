@@ -8,15 +8,6 @@ This glossary lists the most prominent terms
 and a few less familiar ones with unusual or
 unexpected definitions.
 
-[A](guide/glossary#A) [B](guide/glossary#B) [C](guide/glossary#C) [D](guide/glossary#D) [E](guide/glossary#E) [F](guide/glossary#F) [G](guide/glossary#G) [H](guide/glossary#H) [I](guide/glossary#I)
-[J](guide/glossary#J) [K](guide/glossary#K) [L](guide/glossary#L) [M](guide/glossary#M) [N](guide/glossary#N) [O](guide/glossary#O) [P](guide/glossary#P) [Q](guide/glossary#Q) [R](guide/glossary#R)
-[S](guide/glossary#S) [T](guide/glossary#T) [U](guide/glossary#U) [V](guide/glossary#V) [W](guide/glossary#W) [X](guide/glossary#X) [Y](guide/glossary#Y) [Z](guide/glossary#Z)
-
-
-{@a A}
-{@a aot}
-
-
 ## ahead-of-time (AOT) compilation
 
 The Angular ahead-of-time (AOT) compiler converts Angular HTML and TypeScript code
@@ -26,39 +17,19 @@ This is the best compilation mode for production environments, with decreased lo
 
 By compiling your application using the `ngc` command-line tool, you can bootstrap directly to a module factory, so you don't need to include the Angular compiler in your JavaScript bundle.
 
-{@a angular-element}
-
 ## Angular element
 
 An Angular [component](guide/glossary#component) packaged as a [custom element](guide/glossary#custom-element).
 
-Learn more in [Angular Elements Overview](guide/elements).
-
-{@a annotation}
-
 ## annotation
 
 A structure that provides metadata for a class. See [decorator](guide/glossary#decorator).
-
-
-{@a attribute-directive}
-
-
-{@a attribute-directives}
-
 
 ## attribute directives
 
 A category of [directive](guide/glossary#directive) that can listen to and modify the behavior of
 other HTML elements, attributes, properties, and components. They are usually represented
 as HTML attributes, hence the name.
-
-Learn more in [Attribute Directives](guide/attribute-directives).
-
-
-{@a B}
-
-{@a binding}
 
 ## binding
 
@@ -69,8 +40,6 @@ which coordinates DOM object properties with data object properties.
 Sometimes refers to a [dependency-injection](guide/glossary#dependency-injection) binding
 between a [token](guide/glossary#token) and a dependency [provider](guide/glossary#provider).
 
-{@a bootstrap}
-
 ## bootstrap
 
 A way to initialize and launch an app or system.
@@ -78,15 +47,6 @@ A way to initialize and launch an app or system.
 In Angular, an app's root NgModule (`AppModule`) has a `bootstrap` property that identifies the app's top-level [components](guide/glossary#component).
 During the bootstrap process, Angular creates and inserts these components into the `index.html` host web page.
 You can bootstrap multiple apps in the same `index.html`. Each app contains its own components.
-
-Learn more in [Bootstrapping](guide/bootstrapping).
-
-{@a C}
-
-{@a case-conventions}
-{@a dash-case}
-{@a camelcase}
-{@a kebab-case}
 
 ## case types
 
@@ -106,8 +66,6 @@ For example, "convert_link_mode".
 * UPPER_UNDERSCORE_CASE (or UPPER_SNAKE_CASE, or SCREAMING_SNAKE_CASE): Traditional for constants (acceptable, but prefer camelCase).
 Upper snake case uses words in all capital letters connected with underscores. For example, "FIX_ME".
 
-{@a class-decorator}
-
 ## class decorator
 
 A [decorator](guide/glossary#decorator) that appears immediately before a class definition, which declares the class to be of the given type, and provides metadata suitable to the type.
@@ -119,31 +77,19 @@ The following decorators can declare Angular class types:
 * `@Injectable()`
 * `@NgModule()`
 
-
-{@a class-field-decorator}
-
 ## class field decorator
 
 A [decorator](guide/glossary#decorator) statement immediately before a field in a class definition that declares the type of that field. Some examples are `@Input` and `@Output`.
-
-{@a collection}
 
 ## collection
 
 In Angular, a set of related [schematics](#schematic) collected in an [npm package](#npm-package).
 
-{@a cli}
-
 ## command-line interface (CLI)
 
 The [Angular CLI](cli) is a command-line tool for managing the Angular development cycle. Use it to create the initial filesystem scaffolding for a [workspace](guide/glossary#workspace) or [project](guide/glossary#project), and to run [schematics](guide/glossary#schematic) that add and modify code for initial generic versions of various elements. The CLI supports all stages of the development cycle, including building, testing, bundling, and deployment.
 
-* To begin using the CLI for a new project, see [Getting Started](guide/quickstart).
-* To learn more about the full capabilities of the CLI, see the [CLI command reference](cli).
-
 See also [Schematics CLI](#schematics-cli).
-
-{@a component}
 
 ## component
 
@@ -153,10 +99,6 @@ The `@Component()` decorator extends the `@Directive()` decorator with template-
 
 An Angular component class is responsible for exposing data and handling most of the view's display and user-interaction logic through [data binding](guide/glossary#data-binding).
 
-Read more about components, templates, and views in [Architecture Overview](guide/architecture).
-
-{@a custom-element}
-
 ## custom element
 
 A web platform feature, currently supported by most browsers and available in other browsers through polyfills (see [Browser support](guide/browser-support)).
@@ -164,13 +106,6 @@ A web platform feature, currently supported by most browsers and available in ot
 The custom element feature extends HTML by allowing you to define a tag whose content is created and controlled by JavaScript code. A custom element (also called a *web component*) is recognized by a browser when it's added to the [CustomElementRegistry](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry).
 
 You can use the API to transform an Angular component so that it can be registered with the browser and used in any HTML that you add directly to the DOM within an Angular app. The custom element tag inserts the component's view, with change-detection and data-binding functionality, into content that would otherwise be displayed without Angular processing.
-
-See also [dynamic component loading](guide/glossary#dynamic-components).
-
-
-{@a D}
-
-{@a data-binding}
 
 ## data binding
 
@@ -193,8 +128,6 @@ Read about the following forms of binding in [Template Syntax](guide/template-sy
  * [Style binding](guide/template-syntax#style-binding)
  * [Two-way data binding with ngModel](guide/template-syntax#ngModel)
 
-{@a declarable}
-
 ## declarable
 
 A class type that you can add to the `declarations` list of an [NgModule](guide/glossary#ngmodule).
@@ -207,11 +140,6 @@ Don't declare the following:
 * Service classes
 * Non-Angular classes and objects, such as strings, numbers, functions, entity models, configurations, business logic, and helper classes
 
-
-{@a decorator}
-
-{@a decoration}
-
 ## decorator | decoration
 
 A function that modifies a class or property definition. Decorators (also called *annotations*) are an experimental (stage 2) [JavaScript language feature](https://github.com/wycats/javascript-decorators).
@@ -222,10 +150,6 @@ so that it knows what those classes or properties mean and how they should work.
 
 See [class decorator](guide/glossary#class-decorator), [class field decorator](guide/glossary#class-field-decorator).
 
-{@a di}
-
-{@a dependency-injection}
-
 ## dependency injection (DI)
 
 A design pattern and mechanism for creating and delivering some parts of an application (dependencies) to other parts of an application that require them.
@@ -233,17 +157,9 @@ A design pattern and mechanism for creating and delivering some parts of an appl
 In Angular, dependencies are typically services, but they also can be values, such as strings or functions.
 An [injector](guide/glossary#injector) for an app (created automatically during bootstrap) instantiates dependencies when needed, using a configured [provider](guide/glossary#provider) of the service or value.
 
-Learn more in [Dependency Injection in Angular](guide/dependency-injection).
-
-{@a di-token}
-
 ## DI token
 
 A lookup token associated with a dependency [provider](guide/glossary#provider), for use with the [dependency injection](guide/glossary#di) system.
-
-
-{@a directive}
-{@a directives}
 
 ## directive
 
@@ -262,14 +178,10 @@ Angular supplies a number of built-in directives that begin with the `ng` prefix
 You can also create new directives to implement your own functionality.
 You associate a *selector* (an HTML tag such as `<my-directive>`) with a custom directive, thereby extending the [template syntax](guide/template-syntax) that you can use in your apps.
 
-{@a dom}
-
 ## domain-specific language (DSL)
 
 A special-purpose library or API; see [Domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language).
 Angular extends TypeScript with domain-specific languages for a number of domains relevant to Angular apps, defined in NgModules such as [animations](guide/animations), [forms](guide/forms), and [routing and navigation](guide/router).
-
-{@a dynamic-components}
 
 ## dynamic component loading
 
@@ -277,30 +189,17 @@ A technique for adding a component to the DOM at run time. Requires that you exc
 
 See also [custom element](guide/glossary#custom-element), which provides an easier path with the same result.
 
-
-{@a E}
-
-{@a eager-loading}
-
 ## eager loading
 
 NgModules or components that are loaded on launch are called eager-loaded, to distinguish them from those
 that are loaded at run time (lazy-loaded).
 See [lazy loading](guide/glossary#lazy-load).
 
-
-{@a ecma}
-
 ## ECMAScript
 
 The [official JavaScript language specification](https://en.wikipedia.org/wiki/ECMAScript).
 
 Not all browsers support the latest ECMAScript standard, but you can use a [transpiler](guide/glossary#transpile) (like [TypeScript](guide/glossary#typescript)) to write code using the latest features, which will then be transpiled to code that runs on versions that are supported by browsers.
-
-To learn more, see [Browser Support](guide/browser-support).
-
-
-{@a element}
 
 ## element
 
@@ -313,8 +212,6 @@ The documentation generally refers to *elements* (`ElementRef` instances), as di
 
 Compare to [custom element](guide/glossary#custom-element).
 
-{@a entry-point}
-
 ## entry point
 
 A JavaScript symbol that makes parts of an [npm package](guide/npm-packages) available for import by other code.
@@ -322,56 +219,26 @@ The Angular [scoped packages](guide/glossary#scoped-package) each have an entry 
 
 Within Angular, use [NgModules](guide/glossary#ngmodule) to make public parts available for import by other NgModules.
 
-
-{@a F}
-
-{@a form-control}
-
 ## form control
 
 A instance of `FormControl`, which is a fundamental building block for Angular forms. Together with `FormGroup` and `FormArray`, tracks the value, validation, and status of a form input element.
-
-Read more forms in the [Introduction to forms in Angular](guide/forms-overview).
-
-{@a form-model}
 
 ## form model
 
 The "source of truth" for the value and validation status of a form input element at a given point in time. When using [reactive forms](guide/glossary#reactive-forms), the form model is created explicitly in the component class. When using [template-driven forms](guide/glossary#template-driven-forms), the form model is implicitly created by directives.
 
-Learn more about reactive and template-driven forms in the [Introduction to forms in Angular](guide/forms-overview).
-
-{@a form-validation}
-
 ## form validation
 
 A check that runs when form values change and reports whether the given values are correct and complete, according to the defined constraints. Reactive forms apply [validator functions](guide/form-validation#adding-to-reactive-forms). Template-driven forms use [validator directives](guide/form-validation#adding-to-template-driven-forms).
-
-
-To learn more, see [Form Validation](guide/form-validation).
-
-{@a G}
-
-
-{@a H}
-
-{@a I}
-
-
-{@a immutability}
 
 ## immutability
 
 The ability to alter the state of a value after its creation. [Reactive forms](guide/glossary#reactive-forms) perform immutable changes in that
 each change to the data model produces a new data model rather than modifying the existing one. [Template-driven forms](guide/glossary#template-driven-forms) perform mutable changes with `NgModel` and [two-way data binding](guide/glossary#data-binding) to modify the existing data model in place.
 
-{@a injectable}
-
 ## injectable
 
 An Angular class or other definition that provides a dependency using the [dependency injection](guide/glossary#di) mechanism. An injectable [service](guide/glossary#service) class must be marked by the `@Injectable()` [decorator](guide/glossary#decorator). Other items, such as constant values, can also be injectable.
-
-{@a injector}
 
 ## injector
 
@@ -389,18 +256,12 @@ and are inherited through the component hierarchy.
 
 Learn more about the injector hierarchy in [Hierarchical Dependency Injectors](guide/hierarchical-dependency-injection).
 
-{@a input}
-
 ## input
 
 When defining a [directive](guide/glossary#directive), the `@Input()` decorator on a directive property
 makes that property available as a *target* of a [property binding](guide/template-syntax#property-binding).
 Data values flow into an input property from the data source identified
 in the [template expression](guide/glossary#template-expression) to the right of the equal sign.
-
-To learn more, see [input and output properties](guide/template-syntax#inputs-outputs).
-
-{@a interpolation}
 
 ## interpolation
 
@@ -413,22 +274,6 @@ or displayed between element tags, as in this example.
 
 </code-example>
 
-
-Read more about [interpolation](guide/template-syntax#interpolation) in [Template Syntax](guide/template-syntax).
-
-
-{@a J}
-
-{@a javascript}
-
-## JavaScript
-
-See [ECMAScript](guide/glossary#ecma), [TypeScript](guide/glossary#typescript).
-
-
-{@a jit}
-
-
 ## just-in-time (JIT) compilation
 
 The Angular just-in-time (JIT) compiler converts your Angular HTML and TypeScript code into
@@ -440,14 +285,6 @@ because it results in large application payloads that hinder the bootstrap perfo
 
 Compare to [ahead-of-time (AOT) compilation](guide/glossary#aot).
 
-
-{@a K}
-
-
-{@a L}
-
-{@a lazy-load}
-
 ## lazy loading
 
 A process that speeds up application load time by splitting the application into multiple bundles and loading them on demand.
@@ -455,8 +292,6 @@ For example, dependencies can be lazy loaded as needed&mdash;as opposed to [eage
 
 The [router](guide/glossary#router) makes use of lazy loading to load child views only when the parent view is activated.
 Similarly, you can build custom elements that can be loaded into an Angular app when needed.
-
-{@a library}
 
 ## library
 
@@ -468,8 +303,6 @@ A library isn't a complete Angular app and can't run independently.
 * Application developers can use the [Angular CLI](guide/glossary#cli) to `add` a published library for use with an application in the same [workspace](guide/glossary#workspace).
 
 See also [schematic](#schematic).
-
-{@a lifecycle-hook}
 
 ## lifecycle hook
 
@@ -489,13 +322,6 @@ Angular calls these hook methods in the following order:
 * `ngAfterViewChecked`: After every check of a component's views.
 * `ngOnDestroy`: Just before the directive is destroyed.
 
-To learn more, see [Lifecycle Hooks](guide/lifecycle-hooks).
-
-
-{@a M}
-
-{@a module}
-
 ## module
 
 In general, a module collects a block of code dedicated to a single purpose. Angular uses standard JavaScript modules and also defines an Angular module, `NgModule`.
@@ -505,11 +331,6 @@ In JavaScript (ECMAScript), each file is a module and all objects defined in the
 Angular ships as a collection of JavaScript modules (also called libraries). Each Angular library name begins with the `@angular` prefix. Install Angular libraries with the [npm package manager](https://docs.npmjs.com/getting-started/what-is-npm) and import parts of them with JavaScript `import` declarations.
 
 Compare to [NgModule](guide/glossary#ngmodule).
-
-
-{@a N}
-
-{@a ngmodule}
 
 ## NgModule
 
@@ -522,19 +343,9 @@ NgModules are typically named after the file in which the exported thing is defi
 
 Every Angular application has a root module. By convention, the class is called `AppModule` and resides in a file named `app.module.ts`.
 
-To learn more, see [NgModules](guide/ngmodules).
-
-{@a npm-package}
-
 ## npm package
 
 The [npm package manager](https://docs.npmjs.com/getting-started/what-is-npm) is used to distribute and load Angular modules and libraries.
-
-Learn more about how Angular uses [Npm Packages](guide/npm-packages).
-
-{@a O}
-
-{@a observable}
 
 ## observable
 
@@ -544,16 +355,9 @@ Observables can deliver single or multiple values of any type to subscribers, ei
 
 Angular uses a third-party library called [Reactive Extensions (RxJS)](http://reactivex.io/rxjs/).
 
-To learn more, see [Observables](guide/observables).
-
-
-{@a observer}
-
 ## observer
 
 An object passed to the `subscribe()` method for an [observable](guide/glossary#observable). The object defines the callbacks for the [subscriber](guide/glossary#subscriber).
-
-{@a output}
 
 ## output
 
@@ -562,35 +366,15 @@ makes that property available as a *target* of [event binding](guide/template-sy
 Events stream *out* of this property to the receiver identified
 in the [template expression](guide/glossary#template-expression) to the right of the equal sign.
 
-To learn more, see [Input and Output Properties](guide/template-syntax#inputs-outputs).
-
-
-{@a P}
-
-{@a pipe}
-
 ## pipe
 
 A class which is preceded by the `@Pipe{}` decorator and which defines a function that transforms input values to output values for display in a [view](guide/glossary#view). Angular defines various pipes, and you can define new pipes.
-
-To learn more, see [Pipes](guide/pipes).
-
-{@a polyfill}
-
-## polyfill
-
-An [npm package](guide/npm-packages) that plugs gaps in a browser's JavaScript implementation.
-See [Browser Support](guide/browser-support) for polyfills that support particular functionality for particular platforms.
-
-{@a project}
 
 ## project
 
 In Angular, a folder within a [workspace](guide/glossary#workspace) that contains an Angular app or [library](guide/glossary#library).
 A workspace can contain multiple projects.
 All apps in a workspace can use libraries in the same workspace.
-
-{@a provider}
 
 ## provider
 
@@ -602,15 +386,6 @@ Angular registers its own providers with every injector, for services that Angul
 You can register your own providers for services that your app needs.
 
 See also [service](guide/glossary#service), [dependency injection](guide/glossary#di).
-
-Learn more in [Dependency Injection](guide/dependency-injection).
-
-
-{@a Q}
-
-{@a R}
-
-{@a reactive-forms}
 
 ## reactive forms
 
@@ -625,10 +400,7 @@ When using reactive forms:
 * The template input elements do *not* use `ngModel`.
 * The associated Angular directives are prefixed with `form`, such as `formControl`, `formGroup`, and `formControlName`.
 
-The alternative is a template-driven form. For an introduction and comparison of both forms approaches, see [Introduction to Angular Forms](guide/forms-overview).
-
-{@a router}
-{@a router-module}
+The alternative is a template-driven form.
 
 ## router
 
@@ -638,30 +410,15 @@ The `Router` module is an [NgModule](guide/glossary#ngmodule) that provides the 
 
 The router defines navigation among views on a single page, as opposed to navigation among pages. It interprets URL-like links to determine which views to create or destroy, and which components to load or unload. It allows you to take advantage of [lazy loading](guide/glossary#lazy-load) in your Angular apps.
 
-To learn more, see [Routing and Navigation](guide/router).
-
-{@a router-outlet}
-
 ## router outlet
 
 A [directive](guide/glossary#directive) that acts as a placeholder in a routing component's template. Angular dynamically renders the template based on the current router state.
-
-{@a router-component}
 
 ## routing component
 
 An Angular [component](guide/glossary#component) with a `RouterOutlet` directive in its template that displays views based on router navigations.
 
-For more information, see [Routing and Navigation](guide/router).
-
-{@a rule}
-
 In [schematics](#schematic), a function that operates on a [file tree](#file-tree) to create, delete, or modify files in a specific manner, and returns a new `Tree` object.
-
-
-{@a S}
-
-{@a schematic}
 
 ## schematic
 
@@ -672,10 +429,6 @@ The [Angular CLI](guide/glossary#cli) uses schematics to generate and modify [An
 * Angular provides a set of schematics for use with the CLI. See the [Angular CLI command reference](cli). The [`ng add`](cli/add) command runs schematics as part of adding a library to your project. The [`ng generate`](cli/generate) command runs schematics to create apps, libraries, and Angular code constructs.
 
 * [Library](#library) developers can use the [Schematics CLI](#schematics-cli) to create schematics that enable the Angular CLI to add and update their published libraries, and to generate artifacts the library defines.
-
-   For more information, see [devkit documentation](https://www.npmjs.com/package/@angular-devkit/schematics).
-
-{@a schematics-cli}
 
 ## Schematics CLI
 
@@ -688,8 +441,6 @@ npm install -g @angular-devkit/schematics-cli
 
 This installs the `schematics` executable, which you can use to create a new project, add a new schematic to an existing project, or extend an existing schematic.
 
-{@a scoped-package}
-
 ## scoped package
 
 A way to group related [npm packages](guide/npm-packages).
@@ -701,8 +452,6 @@ Import a scoped package in the same way that you import a normal package.
 
 </code-example>
 
-{@a service}
-
 ## service
 
 In Angular, a class with the [@Injectable()](guide/glossary#injectable) decorator that encapsulates non-UI logic and code that can be reused across an application.
@@ -712,18 +461,9 @@ The `@Injectable()` metadata allows the service class to be used with the [depen
 The injectable class is instantiated by a [provider](guide/glossary#provider).
 [Injectors](guide/glossary#injector) maintain lists of providers and use them to provide service instances when they are required by components or other services.
 
-To learn more, see [Introduction to Services and Dependency Injection](guide/architecture-services).
-
-{@a structural-directive}
-{@a structural-directives}
-
 ## structural directives
 
 A category of [directive](guide/glossary#directive) that is responsible for shaping HTML layout by modifying the DOM&mdashthat is, adding, removing, or manipulating elements and their children.
-
-To learn more, see [Structural Directives](guide/structural-directives).
-
-{@a subscriber}
 
 ## subscriber
 
@@ -737,9 +477,6 @@ The `subscribe()` method takes a JavaScript object (called an [observer](guide/g
 * The `error` notification sends a JavaScript Error or exception.
 * The `complete` notification doesn't send a value, but the handler is called when the call completes. Scheduled values can continue to be returned after the call completes.
 
-{@a T}
-{@a template}
-
 ## template
 
 Code associated with a component that defines how to render the component's [view](guide/glossary#view).
@@ -751,8 +488,6 @@ The Angular elements insert or calculate values that modify the HTML elements be
 A template is associated with a [component](guide/glossary#component) class through the `@Component()` [decorator](guide/glossary#decorator). The HTML can be provided inline, as the value of the `template` property, or in a separate HTML file linked through the `templateUrl` property.
 
 Additional templates, represented by `TemplateRef` objects, can define alternative or *embedded* views, which can be referenced from multiple components.
-
-{@a template-drive-forms}
 
 ## template-driven forms
 
@@ -766,36 +501,24 @@ When using template-driven forms:
 * Behind the scenes, Angular creates a new control for each input element, provided you have set up a `name` attribute and two-way binding for each input.
 * The associated Angular directives are prefixed with `ng` such as `ngForm`, `ngModel`, and `ngModelGroup`.
 
-The alternative is a reactive form. For an introduction and comparison of both forms approaches, see [Introduction to Angular Forms](guide/forms-overview).
-
-{@a template-expression}
+The alternative is a reactive form.
 
 ## template expression
 
 A TypeScript-like syntax that Angular evaluates within a [data binding](guide/glossary#data-binding).
 
-Read about how to write template expressions in  [Template expressions](guide/template-syntax#template-expressions).
-
-{@a token}
-
 ## token
 
 An opaque identifier used for efficient table lookup. In Angular, a [DI token](guide/glossary#di-token) is used to find [providers](guide/glossary#provider) of dependencies in the [dependency injection](guide/glossary#di) system.
-
-{@a transpile}
 
 ## transpile
 
 The translation process that transforms one version of JavaScript to another version; for example, down-leveling ES2015 to the older ES5 version.
 
-{@a file-tree}
-
 ## tree
 
 In [schematics](#schematic), a virtual file system represented by the `Tree` class.
 Schematic [rules](#rule) take a tree object as input, operate on them, and return a new tree object.
-
-{@a typescript}
 
 ## TypeScript
 
@@ -805,14 +528,6 @@ code completion, refactoring, inline documentation, and intelligent search).
 Many code editors and IDEs support TypeScript either natively or with plug-ins.
 
 TypeScript is the preferred language for Angular development.
-Read more about TypeScript at [typescriptlang.org](http://www.typescriptlang.org/).
-
-
-{@a U}
-
-{@a V}
-
-{@a view}
 
 ## view
 
@@ -830,37 +545,21 @@ You can change the structure of elements by inserting, moving, or removing neste
 
 View hierarchies can be loaded and unloaded dynamically as the user navigates through the application, typically under the control of a [router](guide/glossary#router).
 
-{@a view-tree}
-
 ## view hierarchy
 
 A tree of related views that can be acted on as a unit. The root view is a component's *host view*.  A host view can be the root of a tree of *embedded views*, collected in a *view container* (`ViewContainerRef`) attached to an anchor element in the hosting component. The view hierarchy is a key part of Angular change detection.
 
 The view hierarchy doesn't imply a component hierarchy. Views that are embedded in the context of a particular hierarchy can be host views of other components. Those components can be in the same NgModule as the hosting component, or belong to other NgModules.
 
-{@a W}
-{@a web-component}
-
 ## web component
 
 See [custom element](guide/glossary#custom-element).
-
-{@a workspace}
 
 ## workspace
 
 In Angular, a folder that contains [projects](guide/glossary#project) (that is, apps and libraries).
 The [CLI](guide/glossary#cli) `ng new` command creates a workspace to contain projects.
 Commands that create or operate on apps and libraries (such as `add` and `generate`) must be executed from within a workspace folder.
-
-{@a X}
-
-
-{@a Y}
-
-
-{@a Z}
-{@a zone}
 
 ## zone
 
@@ -869,6 +568,3 @@ An execution context for a set of asynchronous tasks. Useful for debugging, prof
 An Angular app runs in a zone where it can respond to asynchronous events by checking for data changes and updating the information it displays by resolving [data bindings](guide/glossary#data-binding).
 
 A zone client can take action before and after an async operation completes.
-
-Learn more about zones in this
-[Brian Ford video](https://www.youtube.com/watch?v=3IqtmUscE_U).
